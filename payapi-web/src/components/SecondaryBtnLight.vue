@@ -6,7 +6,7 @@
 button {
   background: #1b262f;
   border-radius: 25px;
-  border: 0 solid #fbfcfe;
+  border: solid #fbfcfe;
 
   padding-left: 25px;
   padding-right: 25px;
