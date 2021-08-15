@@ -24,7 +24,7 @@
     </section>
 
     <section class="section2">
-      <div >
+      <div>
         <p><b>Who we work with</b></p>
 
         <div class="div-logo-text-section2">
@@ -85,16 +85,50 @@
         </div>
       </div>
       <div class="div-circle-section2">
-       <img 
-       class ="img-circle-section2"
-        src="../assets/shared/desktop/bg-pattern-circle.svg"
-        alt=""
-      /> </div>
+        <img
+          class="img-circle-section2"
+          src="../assets/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+        />
+      </div>
     </section>
 
     <section class="section3">
-      <div>
-        <p>section 3</p>
+      <div class="section3-div">
+        <div class="div-img-section3-part1">
+          <img
+            src="../assets/home/desktop/illustration-easy-to-implement.svg"
+            alt=""
+          />
+        </div>
+        <div class="div-text-section3 div-text-section3-part1">
+          <p><b>Easy to implement</b></p>
+          <p>
+            Our API comes with just a few lines of code. You’ll be up and
+            running in no time. We built our documentation page to integrate
+            payments functionality with ease.
+          </p>
+        </div>
+      </div>
+
+      <div class="section3-div">
+        <div class="div-text-section3 div-text-section3-part2">
+          <p><b>Simple UI & UX</b></p>
+          <p>
+            Our pre-built form is easy to integrate in your app or website’s
+            checkout flow and designed to optimize conversion.
+          </p>
+        </div>
+        <div class="div-img-section3-part2">
+          <img src="../assets/home/desktop/illustration-simple-ui.svg" alt="" />
+        </div>
+      </div>
+      <div class="div-circle-section2">
+        <img
+          class="img-circle-section3"
+          src="../assets/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+        />
       </div>
     </section>
   </div>
@@ -159,8 +193,8 @@ p {
 
 /*Section 2*/
 
-.section2{
-overflow: hidden;
+.section2 {
+  overflow: hidden;
 }
 
 .section2 div:first-child {
@@ -174,10 +208,6 @@ overflow: hidden;
   width: 80%;
 }
 
-.section2 p {
-  color: #fbfcfe;
-}
-
 .img-circle-section2 {
   position: absolute;
   top: -900px;
@@ -185,7 +215,7 @@ overflow: hidden;
   overflow: hidden;
 }
 
-.div-circle-section2{
+.div-circle-section2 {
   position: relative;
 }
 
@@ -195,6 +225,7 @@ overflow: hidden;
 }
 
 .section2 p {
+  color: #fbfcfe;
   font-family: DM Serif Display;
   font-style: normal;
   font-weight: normal;
@@ -239,14 +270,56 @@ overflow: hidden;
 }
 
 /*Section 3*/
-.section3 div:first-child {
+.section3 {
   display: flex;
   flex-direction: column;
-  padding-left: 13%;
-  padding-right: 13%;
-  width: 80%;
 }
 
+.section3-div {
+  display: flex;
+  flex-direction: row;
+  padding-left: 13%;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.div-text-section3-part1 {
+  padding-top: 7%;
+}
+
+.div-text-section3-part2 {
+  padding-top: 15%;
+}
+
+.div-text-section3 p:first-child {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: -0.369231px;
+}
+
+.div-text-section3 p {
+  width: 85%;
+}
+
+.div-img-section3-part1 {
+  margin-left: -5%;
+}
+
+.div-img-section3-part2 {
+  margin-left: -5%;
+  margin-right: -7%;
+  z-index: 1;
+}
+
+.img-circle-section3{
+  position: absolute;
+  top: -750px;
+  right: -400px;
+  overflow: hidden;
+  z-index: 3;
+}
 </style>
 
 <script>
