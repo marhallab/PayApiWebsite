@@ -84,14 +84,15 @@
           <secondaryBtn :btnText="'About Us'" />
         </div>
       </div>
-       <img
-        class="img-circle-section2"
+      <div class="div-circle-section2">
+       <img 
+       class ="img-circle-section2"
         src="../assets/shared/desktop/bg-pattern-circle.svg"
         alt=""
-      /> 
+      /> </div>
     </section>
 
-    <section>
+    <section class="section3">
       <div>
         <p>section 3</p>
       </div>
@@ -178,9 +179,14 @@ overflow: hidden;
 }
 
 .img-circle-section2 {
+  position: absolute;
+  top: -900px;
+  left: -250px;
+  overflow: hidden;
+}
+
+.div-circle-section2{
   position: relative;
-  top: -850px;
-  left: -500px;
 }
 
 .div-logo-section2 {
@@ -231,6 +237,16 @@ overflow: hidden;
   display: flex;
   height: 10%;
 }
+
+/*Section 3*/
+.section3 div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13%;
+  padding-right: 13%;
+  width: 80%;
+}
+
 </style>
 
 <script>
