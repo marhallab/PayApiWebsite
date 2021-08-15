@@ -14,7 +14,7 @@
           <router-link to="/contact"> <b> Contact Us. </b></router-link>
         </p>
       </div>
-      <img src="../assets/home/desktop/illustration-phone-mockup.svg" alt="" />
+      <img style="z-index: 1;" src="../assets/home/desktop/illustration-phone-mockup.svg" alt="" />
 
       <img
         class="img-circle-section1"
@@ -123,7 +123,7 @@
           <img src="../assets/home/desktop/illustration-simple-ui.svg" alt="" />
         </div>
       </div>
-      <div class="div-circle-section2">
+      <div class="div-circle-section3">
         <img
           class="img-circle-section3"
           src="../assets/shared/desktop/bg-pattern-circle.svg"
@@ -313,12 +313,16 @@ p {
   z-index: 1;
 }
 
+.div-circle-section3 {
+  position: relative;
+}
+
 .img-circle-section3{
   position: absolute;
   top: -750px;
   right: -400px;
   overflow: hidden;
-  z-index: 3;
+  
 }
 </style>
 
