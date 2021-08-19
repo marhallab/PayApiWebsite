@@ -14,7 +14,11 @@
           <router-link to="/contact"> <b> Contact Us. </b></router-link>
         </p>
       </div>
-      <img style="z-index: 1;" src="../assets/home/desktop/illustration-phone-mockup.svg" alt="" />
+      <img
+        style="z-index: 1"
+        src="../assets/home/desktop/illustration-phone-mockup.svg"
+        alt=""
+      />
 
       <img
         class="img-circle-section1"
@@ -129,6 +133,41 @@
           src="../assets/shared/desktop/bg-pattern-circle.svg"
           alt=""
         />
+      </div>
+    </section>
+
+    <section class="section4">
+      <div>
+        <img src="../assets/home/desktop/icon-personal-finances.svg" alt="" />
+        <p class="section4-title">Personal Finances</p>
+        <p>
+          Consolidate financial data from multiple sources and categorize
+          transactions up to 2 years of history. Analyze reports to reconcile
+          activities in your account.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="../assets/home/desktop/icon-banking-and-coverage.svg"
+          alt=""
+        />
+        <p class="section4-title">Banking & Coverage</p>
+        <p>
+          With our platform, you can speed up account onboarding and support
+          ongoing payments for checking, savings, credit card, and brokerage
+          accounts.
+        </p>
+      </div>
+
+      <div>
+        <img src="../assets/home/desktop/icon-consumer-payments.svg" alt="" />
+        <p class="section4-title">Consumer Payments</p>
+        <p>
+          It’s easier to set up secure bank payments with us through a flow
+          designed with the user experience in mind. Customers could instantly
+          authenticate their account.
+        </p>
       </div>
     </section>
   </div>
@@ -317,12 +356,37 @@ p {
   position: relative;
 }
 
-.img-circle-section3{
+.img-circle-section3 {
   position: absolute;
   top: -750px;
   right: -400px;
   overflow: hidden;
-  
+}
+
+/*Section 4*/
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-top: 3%;
+}
+
+.section4 p {
+  text-align: center;
+}
+
+.section4 div{
+  width: 275px;
+}
+
+.section4-title {
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #36536b;
 }
 </style>
 
