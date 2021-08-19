@@ -369,6 +369,7 @@ p {
   justify-content: space-around;
   padding-left: 13%;
   padding-right: 13%;
+  padding-top: 3%;
 }
 
 .section4 p {
