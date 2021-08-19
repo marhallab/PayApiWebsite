@@ -2,6 +2,7 @@
   <div id="app">
     <navBar />
     <router-view />
+    <footerEmail/>
     <footerBar />
   </div>
 </template>
@@ -17,11 +18,12 @@
 <script>
 import navBar from "./components/NavigationBar.vue";
 import footerBar from "./components/FooterBar.vue";
-
+import footerEmail from "./components/FooterEmailDemo.vue"
 export default {
   components: {
     navBar,
     footerBar,
+    footerEmail
   },
 };
 </script>
