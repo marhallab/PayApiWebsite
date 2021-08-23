@@ -8,25 +8,35 @@
     <div class="div-container">
       <p class="title-container">Pricing</p>
       <div class="div-price-container">
-       
         <div class="price-plan">
           <p class="title-price">Free Plan</p>
-          <p>Build and test using our core set of products with up to 100 API requests </p>
+          <p>
+            Build and test using our core set of products with up to 100 API
+            requests
+          </p>
           <p class="price">$0.00</p>
+          <hr width="100%" />
         </div>
 
-          <div class="price-plan">
+        <div class="price-plan">
           <p class="title-price">Free Plan</p>
-          <p>Build and test using our core set of products with up to 100 API requests </p>
+          <p>
+            Build and test using our core set of products with up to 100 API
+            requests
+          </p>
           <p class="price">$0.00</p>
+          <hr width="100%" />
         </div>
 
-          <div class="price-plan">
+        <div class="price-plan">
           <p class="title-price">Free Plan</p>
-          <p>Build and test using our core set of products with up to 100 API requests </p>
+          <p>
+            Build and test using our core set of products with up to 100 API
+            requests
+          </p>
           <p class="price">$0.00</p>
+          <hr width="100%" />
         </div>
-
       </div>
     </div>
   </div>
@@ -48,7 +58,7 @@ p {
   right: -200px;
 }
 
-.div-container{
+.div-container {
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -61,32 +71,31 @@ p {
   color: #36536b;
 }
 
-.div-price-container{
+.div-price-container {
   display: flex;
   justify-content: space-between;
 }
 
-.price-plan{
+.price-plan {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30% ;
+  width: 30%;
 }
 
-.title-price{
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-color: #BA4270;
+.title-price {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ba4270;
 }
 
-.price{
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: bold;
-font-size: 56px;
-color: #36536B;
+.price {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  color: #36536b;
 }
-
 </style>
