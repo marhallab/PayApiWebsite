@@ -16,13 +16,13 @@
           </p>
           <p class="price">$0.00</p>
           <hr width="100%" />
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          
+          <div>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+          </div>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
 
 p {
   text-align: start;
-  margin:10px;
+  margin: 10px;
   line-height: 175%;
 }
 
