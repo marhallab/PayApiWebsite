@@ -7,6 +7,7 @@
     />
     <div class="div-container">
       <p class="title-container">Pricing</p>
+
       <div class="div-price-container">
         <div class="price-plan">
           <p class="title-price">Free Plan</p>
@@ -24,6 +25,11 @@
             <featurePricing :isOffered="false" :featureName="'Assets'" />
             <featurePricing :isOffered="false" :featureName="'Liabilities'" />
             <featurePricing :isOffered="false" :featureName="'Income'" />
+          </div>
+          <hr width="100%" />
+
+          <div class="div-button">
+            <secondaryDarkBtn :btnText="'Schedule a Demo'" />
           </div>
         </div>
       </div>
@@ -74,6 +80,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   width: 30%;
+  height: 100%;
 }
 
 .title-price {
@@ -91,13 +98,20 @@ p {
   font-size: 56px;
   color: #36536b;
 }
+
+.div-button {
+  margin-top: 5%;
+  display: flex;
+}
 </style>
 
 <script>
-import featurePricing from "../components/FeaturePricing.vue"
+import featurePricing from "../components/FeaturePricing.vue";
+import secondaryDarkBtn from "../components/SecondaryBtnDark.vue";
 export default {
-   components: {
-   featurePricing
+  components: {
+    featurePricing,
+    secondaryDarkBtn,
   },
-}
+};
 </script>
