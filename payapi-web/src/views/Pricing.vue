@@ -16,26 +16,13 @@
           </p>
           <p class="price">$0.00</p>
           <hr width="100%" />
-        </div>
-
-        <div class="price-plan">
-          <p class="title-price">Free Plan</p>
-          <p>
-            Build and test using our core set of products with up to 100 API
-            requests
-          </p>
-          <p class="price">$0.00</p>
-          <hr width="100%" />
-        </div>
-
-        <div class="price-plan">
-          <p class="title-price">Free Plan</p>
-          <p>
-            Build and test using our core set of products with up to 100 API
-            requests
-          </p>
-          <p class="price">$0.00</p>
-          <hr width="100%" />
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          
         </div>
       </div>
     </div>
@@ -50,6 +37,8 @@
 
 p {
   text-align: start;
+  margin:10px;
+  line-height: 175%;
 }
 
 .img-circle {
@@ -69,6 +58,8 @@ p {
   font-weight: bold;
   font-size: 56px;
   color: #36536b;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .div-price-container {
