@@ -17,6 +17,7 @@
           <p class="price">$0.00</p>
           <hr width="100%" />
           <div>
+            <featurePricing :isOffered="true" :featureName="'Test'" />
             <p>test</p>
             <p>test</p>
             <p>test</p>
@@ -90,3 +91,12 @@ p {
   color: #36536b;
 }
 </style>
+
+<script>
+import featurePricing from "../components/FeaturePricing.vue"
+export default {
+   components: {
+   featurePricing
+  },
+}
+</script>
