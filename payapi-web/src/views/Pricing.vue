@@ -17,12 +17,13 @@
           <p class="price">$0.00</p>
           <hr width="100%" />
           <div>
-            <featurePricing :isOffered="true" :featureName="'Test'" />
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <featurePricing :isOffered="true" :featureName="'Transaction'" />
+            <featurePricing :isOffered="true" :featureName="'Auth'" />
+            <featurePricing :isOffered="true" :featureName="'Identity'" />
+            <featurePricing :isOffered="false" :featureName="'Investments'" />
+            <featurePricing :isOffered="false" :featureName="'Assets'" />
+            <featurePricing :isOffered="false" :featureName="'Liabilities'" />
+            <featurePricing :isOffered="false" :featureName="'Income'" />
           </div>
         </div>
       </div>
