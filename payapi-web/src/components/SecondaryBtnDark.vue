@@ -4,12 +4,15 @@
 
 <style scoped>
 button {
-  background: #fbfcfe;
+  background: Transparent;
   border-radius: 25px;
-  border: 0 solid #36536B;
+  border: 1px solid #36536B;
 
   padding-left: 25px;
   padding-right: 25px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-family: Public Sans;
   font-style: normal;
