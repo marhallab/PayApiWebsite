@@ -5,7 +5,7 @@
       src="../assets/shared/desktop/icon-check.svg"
       alt=""
     />
-    <p :style="[isOffered ? {} : { opacity: '0.7', 'margin-left': '-65%' }]">
+    <p :style="[isOffered ? {} : { opacity: '0.7'}]">
       {{ featureName }}
     </p>
   </div>
@@ -18,8 +18,8 @@
 }
 
 p {
-  display: inline;
-  margin-left: -70%;
+  text-align: left;
+  margin-left: 10%;
 }
 img {
   float: left;
