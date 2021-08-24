@@ -29,7 +29,55 @@
           <hr width="100%" />
 
           <div class="div-button">
-            <secondaryDarkBtn :btnText="'Schedule a Demo'" />
+            <secondaryDarkBtn :btnText="'Request Access'" />
+          </div>
+        </div>
+
+        <div class="price-plan">
+          <p class="title-price">Basic Plan</p>
+          <p>
+            Launch your project with unlimited requests and no contractual
+            minimums
+          </p>
+          <p class="price">$249.00</p>
+          <hr width="100%" />
+          <div>
+            <featurePricing :isOffered="true" :featureName="'Transaction'" />
+            <featurePricing :isOffered="true" :featureName="'Auth'" />
+            <featurePricing :isOffered="true" :featureName="'Identity'" />
+            <featurePricing :isOffered="true" :featureName="'Investments'" />
+            <featurePricing :isOffered="true" :featureName="'Assets'" />
+            <featurePricing :isOffered="false" :featureName="'Liabilities'" />
+            <featurePricing :isOffered="false" :featureName="'Income'" />
+          </div>
+          <hr width="100%" />
+
+          <div class="div-button">
+            <secondaryDarkBtn :btnText="'Request Access'" />
+          </div>
+        </div>
+
+        <div class="price-plan">
+          <p class="title-price">Premium Plan</p>
+          <p>
+            Get tailored solutions, volume pricing, and dedicated support for
+            your team
+          </p>
+          <p class="price">$499.00</p>
+          <hr width="100%" />
+          <div>
+            <featurePricing :isOffered="true" :featureName="'Transaction'" />
+            <featurePricing :isOffered="true" :featureName="'Auth'" />
+            <featurePricing :isOffered="true" :featureName="'Identity'" />
+            <featurePricing :isOffered="true" :featureName="'Investments'" />
+            <featurePricing :isOffered="true" :featureName="'Assets'" />
+            <featurePricing :isOffered="true" :featureName="'Liabilities'" />
+            <featurePricing :isOffered="true" :featureName="'Income'" />
+          </div>
+          <hr width="100%" />
+
+          <div class="div-button">
+            <secondaryDarkBtn :btnText="'Request Access'" />
           </div>
         </div>
       </div>
