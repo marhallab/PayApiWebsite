@@ -140,7 +140,7 @@ p {
 .img-circle-section2 {
   position: absolute;
   top: 650px;
-  right: 900px;
+  right: 1000px;
 }
 
 .img-section2 {
@@ -151,10 +151,19 @@ p {
 .infos-container {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
-.info-section2{
-  width: 20%;
+.info-section2 {
+  width: 23%;
+}
+
+.info-section2 p:last-of-type {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 72px;
+  color: #ba4270;
 }
 </style>
