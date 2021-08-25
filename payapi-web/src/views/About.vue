@@ -2,7 +2,7 @@
   <div class="about">
     <section class="section1">
       <img
-        class="img-circle"
+        class="img-circle-section1"
         src="../assets/shared/desktop/bg-pattern-circle.svg"
         alt=""
       />
@@ -32,6 +32,43 @@
         </div>
       </div>
     </section>
+
+    <section class="section2">
+      <img
+        class="img-section2"
+        src="../assets/about/desktop/image-team-members.jpg"
+        alt=""
+      />
+
+      <img
+        class="img-circle-section2"
+        src="../assets/shared/desktop/bg-pattern-circle.svg"
+        alt=""
+      />
+
+      <div class="infos-container">
+        <div class="info-section2">
+          <hr width="100%" />
+          <p>Team Members</p>
+          <p>300+</p>
+          <hr width="100%" />
+        </div>
+
+        <div class="info-section2">
+          <hr width="100%" />
+          <p>Offices in the US</p>
+          <p>3</p>
+          <hr width="100%" />
+        </div>
+
+        <div class="info-section2">
+          <hr width="100%" />
+          <p>Transactions analyzed</p>
+          <p>10M+</p>
+          <hr width="100%" />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -45,12 +82,6 @@ p {
   text-align: start;
   margin: 10px;
   line-height: 175%;
-}
-
-.img-circle {
-  position: absolute;
-  top: -600px;
-  right: -200px;
 }
 
 .title-text {
@@ -93,5 +124,37 @@ p {
   line-height: 56px;
   color: #36536b;
   width: 80%;
+}
+
+.img-circle-section1 {
+  position: absolute;
+  top: -600px;
+  right: -200px;
+}
+
+/*Section 2*/
+.section2 {
+  padding-top: 10%;
+}
+
+.img-circle-section2 {
+  position: absolute;
+  top: 650px;
+  right: 900px;
+}
+
+.img-section2 {
+  position: relative;
+  z-index: 1;
+}
+
+.infos-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10%;
+}
+
+.info-section2{
+  width: 20%;
 }
 </style>
