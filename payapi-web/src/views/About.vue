@@ -6,7 +6,7 @@
         src="../assets/shared/desktop/bg-pattern-circle.svg"
         alt=""
       />
-      <div class="div-container-section1">
+      <div class="div-container-title-text">
         <p class="title-section1">
           We empower innovators by delivering access to the financial system
         </p>
@@ -69,6 +69,30 @@
         </div>
       </div>
     </section>
+
+    <section class="section3">
+      <div class="div-container-title-text">
+        <div class="title-text">
+          <p>The Culture</p>
+          <p>
+            We strongly believe there's always an opportunity to learn from each
+            other outside of day-to-day work, whether it's company-wide
+            offsites, internal hackathons, or co-worker meetups. We always value
+            cross-team collaboration and diversity of thought, no matter the job
+            title.
+          </p>
+        </div>
+
+        <div class="title-text">
+          <p>The People</p>
+          <p>
+            We're all passionate about building a more efficient and inclusive
+            financial infrastructure together. At PayAPI, we have diverse
+            backgrounds and skills.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -111,7 +135,7 @@ p {
   padding-top: 5%;
 }
 
-.div-container-section1 {
+.div-container-title-text {
   display: flex;
   flex-direction: column;
 }
@@ -151,7 +175,7 @@ p {
 .infos-container {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 .info-section2 {
@@ -165,5 +189,12 @@ p {
   font-size: 56px;
   line-height: 72px;
   color: #ba4270;
+}
+
+/*Section 3*/
+.section3 {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
 }
 </style>
