@@ -12,7 +12,7 @@
           <router-link to="/contact">Contact</router-link>
         </div>
       </div>
-
+      
       <primaryBtn :isDisabled="false" :btnText="'Schedule a Demo'"/>
     </div>
     
@@ -30,17 +30,18 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  
+  width: 100%;
 }
 
 #nav-links {
   display: flex;
   width: 500px;
+  
 }
 
 .router-links {
   margin: auto;
-  
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
   width: 50%;

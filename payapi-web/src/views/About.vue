@@ -133,6 +133,7 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5%;
+
 }
 
 .div-container-title-text {
