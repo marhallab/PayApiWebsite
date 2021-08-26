@@ -1,6 +1,6 @@
 <template>
   <div class="FooterEmail">
-    <p><b>Ready to start?</b></p>
+    <p>Ready to start?</p>
 
     <div class="input-btn">
       <input type="text" placeholder="Enter email address" />
@@ -15,22 +15,23 @@
   justify-content: space-between;
   margin-top: 5%;
   margin-bottom: 4%;
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-left: 3%;
+  width: 100%;
 }
 .input-btn {
   display: flex;
   flex-direction: row;
-  height: 50px;
-  width: 60%;
-  margin-top: 6%;
+  height: 50px; 
+  width: 100%;
+  padding-right: 10%;
+  margin-top: 1%;
 }
 
 .input-btn input {
-  width: 40%;
+  width: 60%;
   margin-left: 13% ;
-  margin-right: -7%;
-  padding-left: 5%;
+  margin-right: -10%;
+  padding-left: 6%;
   padding-right: 15%;
   border: none;
   outline: none;
@@ -41,10 +42,10 @@
 p {
 font-family: DM Serif Display;
 font-style: normal;
-font-weight: normal;
-font-size: 50px;
-letter-spacing: -0.369231px;
+font-weight: bold;
+font-size: 45px;
 color: #36536B;
+width: 100%;
 }
 </style>
 

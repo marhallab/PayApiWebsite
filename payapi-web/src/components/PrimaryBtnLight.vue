@@ -1,5 +1,5 @@
 <template>
-  <button :disabled="isDisabled" >{{ btnText }}</button>
+  <button :disabled="isDisabled">{{ btnText }}</button>
 </template>
 
 <style scoped>
@@ -10,6 +10,8 @@ button {
 
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   font-family: Public Sans;
   font-style: normal;
@@ -27,7 +29,6 @@ button:hover {
 
 <script>
 export default {
-
   props: {
     isDisabled: {
       type: Boolean,
@@ -38,8 +39,7 @@ export default {
     },
   },
 
-  computed: {
-  },
+  computed: {},
 
   methods: {
     test() {

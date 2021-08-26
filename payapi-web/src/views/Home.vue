@@ -194,16 +194,19 @@ p {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  width: 80%;
-  padding-left: 13%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section1 div:first-of-type{
+  margin-top: 10%;
 }
 
 .section1 div p:first-of-type {
   font-family: DM Serif Display;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
-  letter-spacing: -0.553846px;
+  font-size: 60px;
   color: #36536b;
   width: 90%;
 }
@@ -215,8 +218,7 @@ p {
 .input-btn-section1 {
   display: flex;
   flex-direction: row;
-  height: 7%;
-  margin-top: -3%;
+  height: 9%;
 }
 
 .input-btn-section1 input {
@@ -241,10 +243,10 @@ p {
   height: 500px;
   display: flex;
   flex-direction: column;
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 5%;
-  width: 80%;
+  width: 100%;
 }
 
 .img-circle-section2 {
@@ -275,7 +277,8 @@ p {
 .div-logo-text-section2 {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
+  padding-top: 3%;
 }
 
 .div-logo-text-section2 p {
@@ -284,17 +287,18 @@ p {
   font-weight: normal;
   font-size: 15px;
   line-height: 28px;
+  vertical-align: center;
   mix-blend-mode: normal;
   opacity: 0.7;
-  width: 350px;
+  width: 40%;
 }
 
 .div-logo-section2 {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 500px;
-  margin-top: 2%;
+  width: 50%;
+  margin-top: 1%;
   height: 100%;
 }
 
@@ -317,8 +321,9 @@ p {
 .section3-div {
   display: flex;
   flex-direction: row;
-  padding-left: 13%;
-  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -348,7 +353,7 @@ p {
 
 .div-img-section3-part2 {
   margin-left: -5%;
-  margin-right: -7%;
+  margin-right: -15%;
   z-index: 1;
 }
 
