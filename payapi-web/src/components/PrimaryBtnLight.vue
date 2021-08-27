@@ -39,8 +39,6 @@ export default {
     },
   },
 
-  computed: {},
-
   methods: {
     test() {
       alert("YES");
