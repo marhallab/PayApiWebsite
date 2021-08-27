@@ -155,7 +155,7 @@ p {
 
 <script>
 import featurePricing from "../components/FeaturePricing.vue";
-import secondaryDarkBtn from "../components/SecondaryBtnDark.vue";
+import secondaryDarkBtn from "../components/Buttons/SecondaryBtnDark.vue";
 export default {
   components: {
     featurePricing,

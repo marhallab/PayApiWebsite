@@ -66,7 +66,7 @@
 </style>
 
 <script>
-import primaryBtn from "./PrimaryBtnLight.vue";
+import primaryBtn from "./Buttons/PrimaryBtnLight.vue";
 
 export default {
   components:{

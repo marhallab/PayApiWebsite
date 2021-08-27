@@ -396,8 +396,8 @@ p {
 </style>
 
 <script>
-import primaryBtn from "../components/PrimaryBtnLight.vue";
-import secondaryBtn from "../components/SecondaryBtnLight.vue";
+import primaryBtn from "../components/Buttons/PrimaryBtnLight.vue";
+import secondaryBtn from "../components/Buttons/SecondaryBtnLight.vue";
 
 export default {
   components: {
