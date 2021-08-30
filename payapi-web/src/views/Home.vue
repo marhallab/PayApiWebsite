@@ -260,10 +260,6 @@ p {
   position: relative;
 }
 
-.div-logo-section2 {
-  display: flex;
-  flex-flow: row wrap;
-}
 
 .section2 p {
   color: #fbfcfe;
