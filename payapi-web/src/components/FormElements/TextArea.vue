@@ -1,8 +1,12 @@
 <template>
-  <input :class="state" v-on:click="inputClicked" placeholder="Message" v-model="text"/>
+  <input :form="form" type="text" :name="placeHolder" :class="state" v-on:click="inputClicked" :placeholder="placeHolder" v-model="text"/>
 </template>
 
 <style scoped>
+input{
+  margin-bottom: 10%;
+}
+
 .normalState {
     border: none;
     border-bottom: 1px solid #36536B;
@@ -42,6 +46,12 @@ export default {
     text: {
       type: String,
     },
+    placeHolder: {
+       type: String,
+    },
+    form: {
+      type: String,
+    }
   },
   methods: {
     inputClicked() {
