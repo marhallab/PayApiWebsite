@@ -1,17 +1,29 @@
 <template>
-  <label class="container">
-    <input type="checkbox" checked="checked" />
-    <span class="checkmark"></span>
-  </label>
+  <div class="div-container">
+    <label class="container">
+      <input type="checkbox" checked="checked" :form="form" name="isChecked" />
+      <span class="checkmark"></span>
+    </label>
+    <p>{{text}}</p>
+  </div>
 </template>
 
 <style scoped>
+.div-container {
+  display: flex;
+  width: 400px;
+}
+p{  
+    text-align: start;
+    margin-top: -2%;
+    margin-left: -20%;
+    
+}
 /* The container */
 .container {
   display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  margin-left: -35%;
+  margin-bottom: 10%;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -44,7 +56,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #BA4270;
+  background-color: #ba4270;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -72,3 +84,16 @@
   transform: rotate(45deg);
 }
 </style>
+
+<script>
+export default {
+  props: {
+    text: {
+      type: String,
+    },
+    form: {
+      type: String,
+    }
+  },
+};
+</script>
