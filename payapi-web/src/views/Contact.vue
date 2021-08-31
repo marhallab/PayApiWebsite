@@ -13,7 +13,32 @@
     </section>
 
     <section class="section2">
-      <div class="div-form-container">ds</div>
+      <div class="div-form-container">
+        <form
+          action="mailto:rhallab.dev@gmail.com"
+          id="form-contact"
+          method="post"
+          enctype="text/plain"
+        >
+          <textArea :form="'form-contact'" :placeHolder="'Name'" />
+          <textArea :form="'form-contact'" :placeHolder="'Email Address'" />
+          <textArea :form="'form-contact'" :placeHolder="'Compagny Name'" />
+          <textArea :form="'form-contact'" :placeHolder="'Title'" />
+          <textField :form="'form-contact'" :placeHolder="'Message'" />
+
+          <checkBox
+            :form="'form-contact'"
+            :text="'Stay up-to-date with company announcements and updates to our API'"
+          />
+          <div class="div-container-submit-btn">
+            <buttonSubmit
+              :form="'form-contact'"
+              :isDisabled="false"
+              :btnText="'Submit'"
+            />
+          </div>
+        </form>
+      </div>
       <div class="div-logo-container">
         <svg width="131" height="17" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -99,7 +124,7 @@ section {
 
 /*Section 2*/
 
-.section2{
+.section2 {
   display: flex;
   justify-content: space-between;
 }
@@ -112,4 +137,31 @@ section {
   margin-top: 1%;
   height: 100%;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div-container-submit-btn {
+  padding-right: 80%;
+}
 </style>
+
+<script>
+import textArea from "../components/FormElements/TextArea.vue";
+import textField from "../components/FormElements/TextField.vue";
+import checkBox from "../components/FormElements/CheckBox.vue";
+import buttonSubmit from "../components/Buttons/SecondaryBtnDark.vue";
+
+export default {
+  data: function () {},
+  components: {
+    textArea,
+    textField,
+    checkBox,
+    buttonSubmit,
+  },
+};
+</script>
