@@ -298,6 +298,10 @@ p {
   height: 100%;
 }
 
+.div-logo-section2 svg {
+  flex: 0 0 33.333333%;
+}
+
 .div-logo-section2 svg path {
   fill: #fbfcfe;
 }
