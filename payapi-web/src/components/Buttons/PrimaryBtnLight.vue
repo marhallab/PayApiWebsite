@@ -1,9 +1,11 @@
 <template>
-  <button :disabled="isDisabled">{{ btnText }}</button>
+  <div>
+    <input :form="form" type="submit" :disabled="isDisabled" :value="btnText" />
+  </div>
 </template>
 
 <style scoped>
-button {
+input {
   background: #ba4270;
   border-radius: 25px;
   border: 0 solid;
@@ -22,7 +24,7 @@ button {
   z-index: 3;
 }
 
-button:hover {
+input:hover {
   opacity: 0.7;
 }
 </style>
@@ -35,6 +37,9 @@ export default {
       default: false,
     },
     btnText: {
+      type: String,
+    },
+    form: {
       type: String,
     },
   },

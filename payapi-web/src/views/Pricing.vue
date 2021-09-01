@@ -29,7 +29,12 @@
           <hr width="100%" />
 
           <div class="div-button">
-            <secondaryDarkBtn :btnText="'Request Access'" />
+            <form id="form-price" action="./contact">
+              <secondaryDarkBtn
+                :form="'form-price'"
+                :btnText="'Request Access'"
+              />
+            </form>
           </div>
         </div>
 
@@ -53,7 +58,12 @@
           <hr width="100%" />
 
           <div class="div-button">
-            <secondaryDarkBtn :btnText="'Request Access'" />
+            <form id="form-price" action="./contact">
+              <secondaryDarkBtn
+                :form="'form-price'"
+                :btnText="'Request Access'"
+              />
+            </form>
           </div>
         </div>
 
@@ -77,7 +87,12 @@
           <hr width="100%" />
 
           <div class="div-button">
-            <secondaryDarkBtn :btnText="'Request Access'" />
+            <form id="form-price" action="./contact">
+              <secondaryDarkBtn
+                :form="'form-price'"
+                :btnText="'Request Access'"
+              />
+            </form>
           </div>
         </div>
       </div>

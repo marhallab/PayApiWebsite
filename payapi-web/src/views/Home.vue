@@ -4,10 +4,13 @@
       <div>
         <p><b>Start building with our APIs for absolutely free.</b></p>
 
-        <div class="input-btn-section1">
-          <input type="text" placeholder="Enter email address" />
-          <primaryBtn :btnText="'Schedule a Demo'" />
-        </div>
+        <form class="input-btn-section1" action="mailto:rhallab.dev@gmail.com"
+          id="form-home"
+          method="post"
+          enctype="text/plain">
+          <input name="Email" type="email" placeholder="Enter email address" />
+          <primaryBtn :form="'form-home'" :btnText="'Schedule a Demo'" />
+        </form>
 
         <p>
           Have any questions?
@@ -198,7 +201,7 @@ p {
   padding-right: 10%;
 }
 
-.section1 div:first-of-type{
+.section1 div:first-child {
   margin-top: 10%;
 }
 
@@ -217,15 +220,14 @@ p {
 
 .input-btn-section1 {
   display: flex;
-  flex-direction: row;
-  height: 9%;
+  width: 450px;
 }
 
 .input-btn-section1 input {
-  width: 50%;
-  margin-right: -5%;
+  width: 100%;
+  margin-right: -10%;
   padding-left: 5%;
-  padding-right: 7%;
+  padding-right: 15%;
   border: none;
   outline: none;
   border-radius: 25px;
@@ -259,7 +261,6 @@ p {
 .div-circle-section2 {
   position: relative;
 }
-
 
 .section2 p {
   color: #fbfcfe;
@@ -381,7 +382,7 @@ p {
   text-align: center;
 }
 
-.section4 div{
+.section4 div {
   width: 275px;
 }
 

@@ -1,12 +1,14 @@
 <template>
-  <input :form="form" type="submit" :disabled="isDisabled" :value="btnText" />
+  <div>
+    <input :form="form" type="submit" :disabled="isDisabled" :value="btnText" />
+  </div>
 </template>
 
 <style scoped>
 input {
   background: Transparent;
   border-radius: 25px;
-  border: 1px solid #36536B;
+  border: 1px solid #36536b;
 
   padding-left: 25px;
   padding-right: 25px;
@@ -18,13 +20,13 @@ input {
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
-  color: #36536B;
+  color: #36536b;
 
   z-index: 3;
 }
 
 input:hover {
-  background: #36536B;
+  background: #36536b;
   color: #fbfcfe;
 }
 </style>
@@ -38,13 +40,12 @@ export default {
     },
     btnText: {
       type: String,
-    },  
+    },
     form: {
       type: String,
-    }
+    },
   },
 
-  computed: {},
 
   methods: {
     test() {
