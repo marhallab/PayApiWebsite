@@ -31,12 +31,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 3;
 }
 
 #nav-links {
   display: flex;
   width: 500px;
-  
 }
 
 .router-links {
