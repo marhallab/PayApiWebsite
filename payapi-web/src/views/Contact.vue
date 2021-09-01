@@ -181,7 +181,6 @@ import checkBox from "../components/FormElements/CheckBox.vue";
 import buttonSubmit from "../components/Buttons/SecondaryBtnDark.vue";
 
 export default {
-
   components: {
     textArea,
     textField,
