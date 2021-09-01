@@ -260,10 +260,6 @@ p {
   position: relative;
 }
 
-.div-logo-section2 {
-  display: flex;
-  flex-flow: row wrap;
-}
 
 .section2 p {
   color: #fbfcfe;
@@ -300,6 +296,10 @@ p {
   width: 50%;
   margin-top: 1%;
   height: 100%;
+}
+
+.div-logo-section2 svg {
+  flex: 0 0 33.333333%;
 }
 
 .div-logo-section2 svg path {

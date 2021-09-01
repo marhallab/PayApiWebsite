@@ -1,8 +1,12 @@
 <template>
-  <textarea :class="state" v-on:click="textAreaClicked" rows="4" cols="50" placeholder="Message" v-model="text"/>
+  <textarea name="Message" :form="form" :class="state" v-on:click="textAreaClicked" rows="4" cols="50" placeholder="Message" v-model="text"/>
 </template>
 
 <style scoped>
+textarea{
+  margin-bottom: 10%;
+}
+
 .normalState {
     border: none;
     border-bottom: 1px solid #36536B;
@@ -40,6 +44,9 @@ export default {
     text: {
       type: String,
     },
+    form: {
+      type: String,
+    }
   },
   methods: {
     textAreaClicked() {
