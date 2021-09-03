@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input   :form="form" type="submit" :disabled="isDisabled" :value="btnText" />
+    <input  :form="form" type="submit" :disabled="isDisabled" :value="btnText" />
   </div>
 </template>
 
