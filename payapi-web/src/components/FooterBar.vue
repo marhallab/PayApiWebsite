@@ -178,7 +178,7 @@
 }
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 .footer {
   background-color: #1b262f;
   overflow: hidden;
@@ -229,7 +229,7 @@
 .footer-circle {
   position: relative;
   top: -300px;
-  right: -600px;
+  right: -450px;
   z-index:2;
 }
 }
