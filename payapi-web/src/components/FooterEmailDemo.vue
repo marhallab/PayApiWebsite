@@ -54,7 +54,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
   .FooterEmail {
     flex-direction: column;
     margin-bottom: 10%;

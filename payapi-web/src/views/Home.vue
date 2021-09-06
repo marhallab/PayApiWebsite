@@ -298,6 +298,7 @@ p {
   width: 50%;
   margin-top: 1%;
   height: 100%;
+  margin-left: 5%;
 }
 
 .div-logo-section2 svg {
@@ -396,7 +397,7 @@ p {
   color: #36536b;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 p{
   text-align: center;
 }
