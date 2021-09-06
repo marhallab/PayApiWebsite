@@ -273,19 +273,19 @@ export default {
         this.stateName = "errorState";
         e.preventDefault();
       }
-      if (this.email == null) {
+      if (this.email == null || this.email == "") {
         this.stateEmail = "errorState";
         e.preventDefault();
       }
-      if (this.compagny == null) {
+      if (this.compagny == null || this.compagny == "") {
         this.stateCompagny = "errorState";
         e.preventDefault();
       }
-      if (this.title == null) {
+      if (this.title == null || this.title == "") {
         this.stateTitle = "errorState";
         e.preventDefault();
       }
-      if (this.message == null) {
+      if (this.message == null || this.message == "") {
         this.stateMessage = "errorState";
         e.preventDefault();
       }
