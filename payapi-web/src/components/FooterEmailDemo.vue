@@ -2,10 +2,16 @@
   <div class="FooterEmail">
     <p>Ready to start?</p>
 
-    <div class="input-btn">
-      <input type="text" placeholder="Enter email address" />
-      <primaryBtn :btnText="'Schedule a Demo'" />
-    </div>
+    <form
+      class="input-btn"
+      action="mailto:rhallab.dev@gmail.com"
+      id="form-nav"
+      method="post"
+      enctype="text/plain"
+    >
+      <input name="Email" type="email" placeholder="Enter email address" />
+      <primaryBtn :form="'form-nav'" :btnText="'Schedule a Demo'" />
+    </form>
   </div>
 </template>
 
@@ -21,7 +27,7 @@
 .input-btn {
   display: flex;
   flex-direction: row;
-  height: 50px; 
+  height: 50px;
   width: 100%;
   padding-right: 10%;
   margin-top: 1%;
@@ -29,7 +35,7 @@
 
 .input-btn input {
   width: 60%;
-  margin-left: 13% ;
+  margin-left: 13%;
   margin-right: -10%;
   padding-left: 6%;
   padding-right: 15%;
@@ -40,12 +46,12 @@
 }
 
 p {
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: bold;
-font-size: 45px;
-color: #36536B;
-width: 100%;
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  color: #36536b;
+  width: 100%;
 }
 </style>
 

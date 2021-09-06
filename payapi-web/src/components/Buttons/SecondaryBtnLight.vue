@@ -1,5 +1,5 @@
 <template>
-  <button :disabled="isDisabled">{{ btnText }}</button>
+  <button :disabled="isDisabled"> <router-link to="/about"> {{ btnText }}</router-link></button>
 </template>
 
 <style scoped>
@@ -15,15 +15,22 @@ button {
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
-  color: #fbfcfe;
 
   z-index: 3;
 }
 
+a{
+   color: #fbfcfe;
+}
+
 button:hover {
   background: #fbfcfe;
-  color: #1b262f;
 }
+
+button:hover a{
+color: #1b262f;
+}
+
 </style>
 
 <script>
@@ -36,9 +43,8 @@ export default {
     btnText: {
       type: String,
     },
+    
   },
-
-  computed: {},
 
   methods: {
     test() {

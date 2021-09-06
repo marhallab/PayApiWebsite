@@ -12,15 +12,15 @@
           <router-link to="/contact">Contact</router-link>
         </div>
       </div>
-      
-      <primaryBtn :isDisabled="false" :btnText="'Schedule a Demo'"/>
+      <form id="form-nav" action="./contact">
+        <primaryBtn :form="'form-nav'" :isDisabled="false" :btnText="'Schedule a Demo'" />
+      </form>
     </div>
-    
   </div>
 </template>
 
 <style scoped>
-.nav{
+.nav {
   z-index: 3;
   padding-top: 4%;
   padding-left: 10%;
@@ -58,19 +58,17 @@
   opacity: 0.7;
 }
 
-.router-links a:hover{
+.router-links a:hover {
   opacity: 1;
-
 }
-
 </style>
 
 <script>
 import primaryBtn from "./Buttons/PrimaryBtnLight.vue";
 
 export default {
-  components:{
-    primaryBtn
-  }
-}
+  components: {
+    primaryBtn,
+  },
+};
 </script>

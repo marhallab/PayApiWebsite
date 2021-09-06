@@ -15,16 +15,47 @@
     <section class="section2">
       <div class="div-form-container">
         <form
-          action="mailto:rhallab.dev@gmail.com"
           id="form-contact"
+          @submit="checkForm"
+          action="mailto:rhallab.dev@gmail.com"
           method="post"
           enctype="text/plain"
         >
-          <textArea :form="'form-contact'" :placeHolder="'Name'" />
-          <textArea :form="'form-contact'" :placeHolder="'Email Address'" />
-          <textArea :form="'form-contact'" :placeHolder="'Compagny Name'" />
-          <textArea :form="'form-contact'" :placeHolder="'Title'" />
-          <textField :form="'form-contact'" :placeHolder="'Message'" />
+          <textArea
+            :class="stateName"
+            @update-state="updateNameState"
+            :form="'form-contact'"
+            :placeHolder="'Name'"
+            @input="updateName"
+          />
+          <textArea
+            :class="stateEmail"
+            @update-state="updateEmailState"
+            :form="'form-contact'"
+            :placeHolder="'Email Address'"
+            @input="updateEmail"
+          />
+          <textArea
+            :class="stateCompagny"
+            @update-state="updateCompagnyState"
+            :form="'form-contact'"
+            :placeHolder="'Compagny Name'"
+            @input="updateCompagny"
+          />
+          <textArea
+            :class="stateTitle"
+            @update-state="updateTitleState"
+            :form="'form-contact'"
+            :placeHolder="'Title'"
+            @input="updateTitle"
+          />
+          <textField
+            :class="stateMessage"
+            @update-state="updateMessageState"
+            :form="'form-contact'"
+            :placeHolder="'Message'"
+            @input="updateMessage"
+          />
 
           <checkBox
             :form="'form-contact'"
@@ -132,23 +163,22 @@ section {
   justify-content: space-between;
 }
 
-.div-text-logo-container{
+.div-text-logo-container {
   margin-left: 10%;
   margin-top: 10%;
   width: 1000px;
 }
 
-.div-text-logo-container p:first-child{
-font-family: DM Serif Display;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: -0.184615px;
-color: #36536B;
-margin-bottom: 10%;
+.div-text-logo-container p:first-child {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.184615px;
+  color: #36536b;
+  margin-bottom: 10%;
 }
-
 
 .div-logo-container {
   display: flex;
@@ -159,7 +189,7 @@ margin-bottom: 10%;
   height: 30%;
 }
 
-svg{
+svg {
   flex: 0 0 33.333333%;
 }
 
@@ -181,11 +211,95 @@ import checkBox from "../components/FormElements/CheckBox.vue";
 import buttonSubmit from "../components/Buttons/SecondaryBtnDark.vue";
 
 export default {
+  data: function () {
+    return {
+      name: null,
+      email: null,
+      compagny: null,
+      title: null,
+      message: null,
+
+      stateName: "normalState",
+      stateEmail: "normalState",
+      stateCompagny: "normalState",
+      stateTitle: "normalState",
+      stateMessage: "normalState",
+    };
+  },
   components: {
     textArea,
     textField,
     checkBox,
     buttonSubmit,
+  },
+
+  methods: {
+    updateNameState(stateName) {
+      this.stateName = stateName;
+    },
+    updateEmailState(stateEmail) {
+      this.stateEmail = stateEmail;
+    },
+    updateCompagnyState(stateCompagny) {
+      this.stateCompagny = stateCompagny;
+    },
+    updateTitleState(stateTitle) {
+      this.stateTitle = stateTitle;
+    },
+    updateMessageState(stateMessage) {
+      this.stateMessage = stateMessage;
+    },
+    updateName(value) {
+      this.name = value;
+    },
+    updateEmail(value) {
+      this.email = value;
+    },
+    updateCompagny(value) {
+      this.compagny = value;
+    },
+    updateTitle(value) {
+      this.title = value;
+    },
+    updateMessage(value) {
+      this.message = value;
+    },
+
+    checkForm(e) {
+      console.log("HERE : " + this.name);
+      console.log("HERE : " + this.message);
+
+      if (this.name == null || this.name == "") {
+        this.stateName = "errorState";
+        e.preventDefault();
+      }
+      if (this.email == null || this.email == "") {
+        this.stateEmail = "errorState";
+        e.preventDefault();
+      }
+      if (this.compagny == null || this.compagny == "") {
+        this.stateCompagny = "errorState";
+        e.preventDefault();
+      }
+      if (this.title == null || this.title == "") {
+        this.stateTitle = "errorState";
+        e.preventDefault();
+      }
+      if (this.message == null || this.message == "") {
+        this.stateMessage = "errorState";
+        e.preventDefault();
+      }
+
+      if (
+        this.name &&
+        this.email &&
+        this.compagny &&
+        this.title &&
+        this.message
+      ) {
+        return true;
+      }
+    },
   },
 };
 </script>
