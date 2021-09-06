@@ -32,7 +32,7 @@ textarea {
   background-color: transparent;
   resize: none;
   outline: none;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .errorState::placeholder {
