@@ -53,6 +53,18 @@ p {
   color: #36536b;
   width: 100%;
 }
+
+@media only screen and (max-width:768px) {
+  .FooterEmail {
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 7%;
+  }
+
+  .input-btn input {
+  margin-left: 17%;
+}
+}
 </style>
 
 
