@@ -23,7 +23,7 @@ input {
   resize: none;
   overflow: hidden;
   outline: none;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .errorState {
