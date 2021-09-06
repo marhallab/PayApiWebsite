@@ -502,14 +502,6 @@ p{
   margin-top: 5%;
 }
 
-.div-logo-section2 svg {
-  flex: 0 0 33.333333%;
-}
-
-.div-logo-section2 svg path {
-  fill: #fbfcfe;
-}
-
 .div-btn-section2 {
   margin: auto;
   margin-top: 5%;
@@ -518,6 +510,62 @@ p{
   height: 20%;
 }
 
+
+/*Section 3*/
+.section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section3-div {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.section3-div:first-of-type{
+  flex-direction: column;
+}
+
+
+.section3-div{
+  flex-direction: column-reverse;
+}
+
+
+.div-text-section3-part1 {
+  padding-top: 0%;
+  margin-top: -10%;
+}
+
+.div-text-section3-part2 {
+  padding-top: 0%;
+  margin-top: -10%;
+  padding-bottom: 15%;
+}
+
+
+.div-text-section3 p {
+  width: 100%;
+}
+
+.div-img-section3-part1 {
+  margin-left: -5%;
+  margin-right: -15%;
+  z-index: 1;
+}
+.div-img-section3-part2 {
+  margin-top: 15%;
+  margin-left: -5%;
+  margin-right: -15%;
+  z-index: 1;
+}
+
+.div-circle-section3 {
+  display: none;
+}
 
 }
 </style>
