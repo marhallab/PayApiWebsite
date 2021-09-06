@@ -417,7 +417,7 @@ p{
 
 .img-section1{
   width: 60%;
-  margin: auto;
+  margin-left: 25%;
 }
 
 .section1 div p:first-of-type {
@@ -529,11 +529,9 @@ p{
   flex-direction: column;
 }
 
-
 .section3-div{
   flex-direction: column-reverse;
 }
-
 
 .div-text-section3-part1 {
   padding-top: 0%;
@@ -546,7 +544,6 @@ p{
   padding-bottom: 15%;
 }
 
-
 .div-text-section3 p {
   width: 100%;
 }
@@ -556,6 +553,7 @@ p{
   margin-right: -15%;
   z-index: 1;
 }
+
 .div-img-section3-part2 {
   margin-top: 15%;
   margin-left: -5%;
@@ -567,6 +565,22 @@ p{
   display: none;
 }
 
+/*Section 4*/
+.section4 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+}
+
+.section4 div {
+  width: 175px;
+}
+
+.section4-title {
+  padding-top: 10%;
+}
 }
 </style>
 
