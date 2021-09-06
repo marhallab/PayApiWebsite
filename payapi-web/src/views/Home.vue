@@ -18,6 +18,7 @@
         </p>
       </div>
       <img
+        class="img-section1"
         style="z-index: 1"
         src="../assets/home/desktop/illustration-phone-mockup.svg"
         alt=""
@@ -393,6 +394,131 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: #36536b;
+}
+
+@media only screen and (max-width:768px) {
+p{
+  text-align: center;
+}
+
+ /*Section 1*/ 
+.img-circle-section1 {
+  position: absolute;
+  top: -400px;
+  right: -1%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-section1{
+  width: 60%;
+  margin: auto;
+}
+
+.section1 div p:first-of-type {
+  font-size: 50px;
+  color: #36536b;
+  width: 100%;
+  margin-top: -15%;
+}
+
+.section1 div p:last-of-type {
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+
+.input-btn-section1 {
+  margin: auto;
+}
+
+/*Section 2*/
+
+.section2 {
+  overflow: hidden;
+}
+
+.section2 div:first-child {
+  background-color: #1b262f;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.img-circle-section2 {
+  position: absolute;
+  top: -900px;
+  left: -250px;
+  overflow: hidden;
+}
+
+.div-circle-section2 {
+  position: relative;
+}
+
+.section2 p {
+  color: #fbfcfe;
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+}
+
+.div-logo-text-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.div-logo-text-section2 p {
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  vertical-align: center;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.div-logo-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+
+.div-logo-section2 svg {
+  flex: 0 0 33.333333%;
+}
+
+.div-logo-section2 svg path {
+  fill: #fbfcfe;
+}
+
+.div-btn-section2 {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  height: 20%;
+}
+
+
 }
 </style>
 
