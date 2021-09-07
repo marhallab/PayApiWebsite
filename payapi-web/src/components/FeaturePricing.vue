@@ -15,6 +15,8 @@
 .feature {
   margin-top: 5%;
   margin-bottom: 5%;
+  display: flex;
+
 }
 
 p {
@@ -22,9 +24,9 @@ p {
   margin-left: 10%;
 }
 img {
-  float: left;
-  margin-top: 1%;
-  width: 5%;
+  margin-top: 5px;
+  height: 15px;
+  width: 15px;
 }
 </style>
 
