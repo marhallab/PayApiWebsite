@@ -239,6 +239,8 @@ p {
 
 .section2 {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .section2 div:first-child {
@@ -608,6 +610,11 @@ p{
 
 .div-logo-section2 svg {
   flex: 0 0 50%;
+}
+
+.img-circle-section2 {
+  top: -1000px;
+  left: -25%; 
 }
 
 /*Section 4*/
