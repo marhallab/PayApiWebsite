@@ -11,7 +11,7 @@
       <div class="div-price-container">
         <div class="price-plan">
           <p class="title-price">Free Plan</p>
-          <p>
+          <p class="small-paragraph">
             Build and test using our core set of products with up to 100 API
             requests
           </p>
@@ -40,7 +40,7 @@
 
         <div class="price-plan">
           <p class="title-price">Basic Plan</p>
-          <p>
+          <p class="small-paragraph">
             Launch your project with unlimited requests and no contractual
             minimums
           </p>
@@ -69,7 +69,7 @@
 
         <div class="price-plan">
           <p class="title-price">Premium Plan</p>
-          <p>
+          <p class="small-paragraph">
             Get tailored solutions, volume pricing, and dedicated support for
             your team
           </p>
@@ -141,8 +141,9 @@ p {
 .price-plan {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30%;
+  justify-content: space-between;
+  margin-bottom: 20%;
+  width: 300px;
   height: 100%;
 }
 
@@ -150,7 +151,8 @@ p {
   font-family: DM Serif Display;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
+  width: 125%;
   color: #ba4270;
 }
 
@@ -165,6 +167,37 @@ p {
 .div-button {
   margin-top: 5%;
   display: flex;
+}
+
+
+@media only screen and (max-width:500px) {
+.div-price-container {
+  flex-direction: column;
+  align-items: center;
+}
+.div-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.small-paragraph{
+  display: none;
+}
+
+.title-price {
+  text-align:  center;
+}
+
+.price-plan {
+  margin-bottom: 20%;
+  align-items: center;
+}
+
+.img-circle {
+  position: absolute;
+  top: -600px;
+  right: -500px;
+}
 }
 </style>
 
