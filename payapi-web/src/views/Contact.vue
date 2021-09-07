@@ -202,6 +202,44 @@ form {
 .div-container-submit-btn {
   padding-right: 80%;
 }
+
+@media only screen and (max-width: 1024px) {
+  .title-section1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-text-logo-container {
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+
+  .div-logo-container {
+    height: 200px;
+  }
+
+  .div-text-logo-container p:first-child {
+    text-align: center;
+    margin-left: 0%;
+  }
+
+  .img-circle-section1 {
+    position: absolute;
+    top: -600px;
+    right: -500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  svg {
+    flex: 0 0 50%;
+  }
+}
 </style>
 
 <script>
