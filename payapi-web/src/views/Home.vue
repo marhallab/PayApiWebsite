@@ -18,6 +18,7 @@
         </p>
       </div>
       <img
+        class="img-section1"
         style="z-index: 1"
         src="../assets/home/desktop/illustration-phone-mockup.svg"
         alt=""
@@ -297,6 +298,7 @@ p {
   width: 50%;
   margin-top: 1%;
   height: 100%;
+  margin-left: 5%;
 }
 
 .div-logo-section2 svg {
@@ -376,6 +378,7 @@ p {
   padding-left: 13%;
   padding-right: 13%;
   padding-top: 3%;
+  width: 100%;
 }
 
 .section4 p {
@@ -393,6 +396,230 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: #36536b;
+}
+
+@media only screen and (max-width:1024px) {
+p{
+  text-align: center;
+}
+
+ /*Section 1*/ 
+.img-circle-section1 {
+  position: absolute;
+  top: -400px;
+  right: unset;
+  align-self: center;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-section1{
+  width: 60%;
+  margin-left: 25%;
+}
+
+.section1 div p:first-of-type {
+  font-size: 50px;
+  color: #36536b;
+  width: 100%;
+  margin-top: -15%;
+}
+
+.section1 div p:last-of-type {
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+
+.input-btn-section1 {
+  margin: auto;
+}
+
+/*Section 2*/
+
+.section2 {
+  overflow: hidden;
+}
+
+.section2 div:first-child {
+  background-color: #1b262f;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 100%;
+}
+
+
+.section2 p {
+  color: #fbfcfe;
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+}
+
+.div-logo-text-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.div-logo-text-section2 p {
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  vertical-align: center;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.div-logo-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+
+
+.div-btn-section2 {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  height: 20%;
+}
+
+
+/*Section 3*/
+.section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section3-div {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.section3-div:first-of-type{
+  flex-direction: column;
+}
+
+.section3-div{
+  flex-direction: column-reverse;
+}
+
+.div-text-section3-part1 {
+  padding-top: 0%;
+  margin-top: -10%;
+}
+
+.div-text-section3-part2 {
+  padding-top: 0%;
+  margin-top: -10%;
+  padding-bottom: 15%;
+}
+
+.div-text-section3 p {
+  width: 100%;
+}
+
+.section3 img{
+   width: 100%;
+  height: auto;
+}
+
+.div-img-section3-part1 {
+  margin-left: -5%;
+  margin-right: -15%;
+  z-index: 1;
+}
+
+.div-img-section3-part2 {
+  margin-top: 15%;
+  margin-left: -5%;
+  margin-right: -15%;
+  z-index: 1;
+}
+
+.div-circle-section3 {
+  display: none;
+}
+
+/*Section 4*/
+.section4 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+}
+
+.section4 div {
+  width: 175px;
+}
+
+.section4-title {
+  padding-top: 10%;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+/*Section 1*/
+.input-btn-section1 {
+  flex-direction: column;
+  width: 400px;
+}
+
+.input-btn-section1 input {
+  height: 50px;
+  margin-bottom: 5%;
+}
+
+/*Section 2*/
+.section2 div:first-child {
+  height: 600px;
+}
+
+.div-logo-section2 {
+  margin-top: 7%;
+  height: 200px;
+}
+
+.div-logo-section2 svg {
+  flex: 0 0 50%;
+}
+
+/*Section 4*/
+.section4 {
+flex-direction: column;
+align-items: center;
+}
+
+.section4 div {
+  width: 300px;
+  margin-bottom: 15%;
+}
 }
 </style>
 

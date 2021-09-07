@@ -12,8 +12,59 @@
           <router-link to="/contact">Contact</router-link>
         </div>
       </div>
+
+      <div class="sidebar">
+        <b-button v-b-toggle.sidebar-right variant="transparent">
+          <img src="../assets/shared/mobile/menu.svg" alt="" />
+        </b-button>
+
+        <b-sidebar
+          id="sidebar-right"
+          bg-variant="dark"
+          text-variant="light"
+          right
+          no-header
+        >
+          <template #default="{ toggle }">
+
+            <b-button
+              v-b-toggle.sidebar-right
+              variant="transparent"
+              @click="toggle"
+              class="closeSidebarBtn"
+            >
+              <img src="../assets/shared/mobile/close.svg" alt="" />
+            </b-button>
+
+            <hr width="80%" />
+
+            <div class="px-3 py-3">
+
+              <div class="router-links-sidebar">
+                <router-link to="/pricing">Pricing</router-link>
+                <router-link to="/about">About</router-link>
+                <router-link to="/contact">Contact</router-link>
+              </div>
+
+              <form id="form-nav-sidebar" action="./contact">
+                <primaryBtn
+                  :form="'form-nav-sidebar'"
+                  :isDisabled="false"
+                  :btnText="'Schedule a Demo'"
+                />
+              </form>
+
+            </div>
+          </template>
+        </b-sidebar>
+      </div>
+
       <form id="form-nav" action="./contact">
-        <primaryBtn :form="'form-nav'" :isDisabled="false" :btnText="'Schedule a Demo'" />
+        <primaryBtn
+          :form="'form-nav'"
+          :isDisabled="false"
+          :btnText="'Schedule a Demo'"
+        />
       </form>
     </div>
   </div>
@@ -32,6 +83,10 @@
   justify-content: space-between;
   width: 100%;
   z-index: 3;
+}
+
+.sidebar {
+  display: none;
 }
 
 #nav-links {
@@ -60,6 +115,60 @@
 
 .router-links a:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    display: block;
+  }
+
+  .router-links {
+    display: none;
+  }
+
+  #form-nav {
+    display: none;
+  }
+
+  .closeSidebarBtn {
+    padding-top: 7%;
+    margin-left: 50%;
+  }
+
+  hr {
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .router-links-sidebar {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 200px;
+  }
+
+  .router-links-sidebar a {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+
+  .router-links-sidebar a:hover {
+    opacity: 1;
+  }
+
+  #sidebar-right{
+    
+  }
+  
 }
 </style>
 
