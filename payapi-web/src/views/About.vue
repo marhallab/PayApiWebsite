@@ -51,18 +51,18 @@
           <hr width="100%" />
           <p>Team Members</p>
           <p>300+</p>
-          <hr width="100%" />
+          <hr class="dividerGone" width="100%" />
         </div>
 
         <div class="info-section2">
-          <hr width="100%" />
+          <hr class="dividerGone" width="100%" />
           <p>Offices in the US</p>
           <p>3</p>
-          <hr width="100%" />
+          <hr class="dividerGone" width="100%" />
         </div>
 
         <div class="info-section2">
-          <hr width="100%" />
+          <hr class="dividerGone" width="100%" />
           <p>Transactions analyzed</p>
           <p>10M+</p>
           <hr width="100%" />
@@ -133,7 +133,6 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5%;
-
 }
 
 .div-container-title-text {
@@ -171,6 +170,8 @@ p {
 .img-section2 {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 .infos-container {
@@ -197,5 +198,50 @@ p {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .title-section1 {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .img-circle-section1 {
+    position: absolute;
+    top: -600px;
+    right: -500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    text-align: center;
+  }
+
+  .title-text {
+    flex-direction: column;
+  }
+
+  .title-text p:first-child {
+    width: 100%;
+  }
+
+  .title-text p:last-child {
+    margin-left: 5%;
+    width: 100%;
+  }
+  .infos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section2 {
+    width: 80%;
+  }
+
+  .dividerGone {
+    display: none;
+  }
 }
 </style>
