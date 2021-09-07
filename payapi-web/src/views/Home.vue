@@ -406,7 +406,8 @@ p{
 .img-circle-section1 {
   position: absolute;
   top: -400px;
-  right: -1%;
+  right: unset;
+  align-self: center;
 }
 
 .section1 {
