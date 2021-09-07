@@ -169,35 +169,36 @@ p {
   display: flex;
 }
 
-
-@media only screen and (max-width:500px) {
-.div-price-container {
-  flex-direction: column;
-  align-items: center;
-}
-.div-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.small-paragraph{
-  display: none;
+@media only screen and (max-width: 1024px) {
+  .img-circle {
+    position: absolute;
+    top: -600px;
+    right: -500px;
+  }
 }
 
-.title-price {
-  text-align:  center;
-}
+@media only screen and (max-width: 500px) {
+  .div-price-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .small-paragraph {
+    display: none;
+  }
 
-.price-plan {
-  margin-bottom: 20%;
-  align-items: center;
-}
+  .title-price {
+    text-align: center;
+  }
 
-.img-circle {
-  position: absolute;
-  top: -600px;
-  right: -500px;
-}
+  .price-plan {
+    margin-bottom: 20%;
+    align-items: center;
+  }
 }
 </style>
 
