@@ -456,16 +456,6 @@ p{
   width: 100%;
 }
 
-.img-circle-section2 {
-  position: absolute;
-  top: -900px;
-  left: -250px;
-  overflow: hidden;
-}
-
-.div-circle-section2 {
-  position: relative;
-}
 
 .section2 p {
   color: #fbfcfe;
