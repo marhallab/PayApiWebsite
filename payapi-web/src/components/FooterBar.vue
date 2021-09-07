@@ -233,4 +233,34 @@
   z-index:2;
 }
 }
+
+@media only screen and (max-width: 500px) {
+  .footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    width: 100%;
+      z-index:3;
+  }
+ 
+ .router-links {
+  flex-direction: column;
+  height: 200px;
+}
+ .footer-circle {
+   position:relative;
+   top: -50px;
+   right: unset;
+   align-self: center;
+}
+}
 </style>

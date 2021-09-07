@@ -54,7 +54,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   .FooterEmail {
     flex-direction: column;
     margin-bottom: 10%;
@@ -62,8 +62,25 @@ p {
   }
 
   .input-btn input {
-  margin-left: 17%;
+    margin-left: 17%;
+  }
 }
+@media only screen and (max-width: 500px) {
+  .input-btn {
+    flex-direction: column;
+    height: 150px;
+    padding-right: unset;
+    align-items: center;
+  }
+  .input-btn input {
+    width: 70%;
+    height: 50px;
+    margin-left: unset;
+    margin-right: unset;
+    margin-bottom: 5%;
+    padding-left: 6%;
+    padding-right: 15%;
+  }
 }
 </style>
 
