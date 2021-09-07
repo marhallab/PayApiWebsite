@@ -378,6 +378,7 @@ p {
   padding-left: 13%;
   padding-right: 13%;
   padding-top: 3%;
+  width: 100%;
 }
 
 .section4 p {
@@ -494,6 +495,7 @@ p{
   margin-top: 5%;
 }
 
+
 .div-btn-section2 {
   margin: auto;
   margin-top: 5%;
@@ -540,6 +542,11 @@ p{
   width: 100%;
 }
 
+.section3 img{
+   width: 100%;
+  height: auto;
+}
+
 .div-img-section3-part1 {
   margin-left: -5%;
   margin-right: -15%;
@@ -572,6 +579,46 @@ p{
 
 .section4-title {
   padding-top: 10%;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+/*Section 1*/
+.input-btn-section1 {
+  flex-direction: column;
+  width: 400px;
+}
+
+.input-btn-section1 input {
+  height: 50px;
+  margin-bottom: 5%;
+}
+
+/*Section 2*/
+.section2 div:first-child {
+  height: 600px;
+}
+
+.div-logo-section2 {
+  margin-top: 7%;
+  height: 200px;
+}
+
+.div-logo-section2 svg {
+  flex: 0 0 50%;
+}
+
+/*Section 4*/
+.section4 {
+flex-direction: column;
+align-items: center;
+}
+
+.section4 div {
+  width: 300px;
+  margin-bottom: 15%;
 }
 }
 </style>
