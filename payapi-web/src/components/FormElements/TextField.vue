@@ -1,12 +1,12 @@
 <template>
   <textarea
-    name="Message"
+    :name="name"
     :form="form"
     :class="state"
     v-on:click="textAreaClicked"
     rows="4"
     cols="50"
-    placeholder="Message"
+    :placeholder="placeHolder"
     v-bind:value="value"
     v-on:input="$emit('input', $event.target.value)"
   />
@@ -55,6 +55,12 @@ export default {
       type: String,
     },
     form: {
+      type: String,
+    },
+    placeHolder: {
+      type: String,
+    },
+    name: {
       type: String,
     },
   },

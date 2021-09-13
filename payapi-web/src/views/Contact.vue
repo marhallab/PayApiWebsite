@@ -14,17 +14,12 @@
 
     <section class="section2">
       <div class="div-form-container">
-        <form
-          id="form-contact"
-          @submit="checkForm"
-          action="mailto:rhallab.dev@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
+        <form id="form-contact" @submit.prevent="sendEmail">
           <textArea
             :class="stateName"
             @update-state="updateNameState"
             :form="'form-contact'"
+            :name="'name'"
             :placeHolder="'Name'"
             @input="updateName"
           />
@@ -32,6 +27,7 @@
             :class="stateEmail"
             @update-state="updateEmailState"
             :form="'form-contact'"
+            :name="'email'"
             :placeHolder="'Email Address'"
             @input="updateEmail"
           />
@@ -39,6 +35,7 @@
             :class="stateCompagny"
             @update-state="updateCompagnyState"
             :form="'form-contact'"
+            :name="'compagny'"
             :placeHolder="'Compagny Name'"
             @input="updateCompagny"
           />
@@ -46,6 +43,7 @@
             :class="stateTitle"
             @update-state="updateTitleState"
             :form="'form-contact'"
+            :name="'title'"
             :placeHolder="'Title'"
             @input="updateTitle"
           />
@@ -53,6 +51,7 @@
             :class="stateMessage"
             @update-state="updateMessageState"
             :form="'form-contact'"
+            :name="'message'"
             :placeHolder="'Message'"
             @input="updateMessage"
           />
@@ -247,6 +246,7 @@ import textArea from "../components/FormElements/TextArea.vue";
 import textField from "../components/FormElements/TextField.vue";
 import checkBox from "../components/FormElements/CheckBox.vue";
 import buttonSubmit from "../components/Buttons/SecondaryBtnDark.vue";
+import emailjs from "emailjs-com";
 
 export default {
   data: function () {
@@ -287,6 +287,7 @@ export default {
     updateMessageState(stateMessage) {
       this.stateMessage = stateMessage;
     },
+
     updateName(value) {
       this.name = value;
     },
@@ -303,10 +304,7 @@ export default {
       this.message = value;
     },
 
-    checkForm(e) {
-      console.log("HERE : " + this.name);
-      console.log("HERE : " + this.message);
-
+    sendEmail(e) {
       if (this.name == null || this.name == "") {
         this.stateName = "errorState";
         e.preventDefault();
@@ -335,7 +333,28 @@ export default {
         this.title &&
         this.message
       ) {
-        return true;
+        try {
+          emailjs.sendForm(
+            "service_qvq4s3m",
+            "template_gh79dzh",
+            e.target,
+            "user_iDRGbuYiNzUscliOtILS6",
+            {
+              name: this.name,
+              email: this.email,
+              compagny: this.compagny,
+              title: this.title,
+              message: this.message,
+            }
+          );
+
+          this.$alert("Your message has been sent successfully! We will get back to you in the upcoming days.").then(() => {
+              this.$router.push({ name: 'Home' })
+        });
+          
+        } catch (error) {
+              this.$alert("Your message has not been sent. Please try again.")
+        }
       }
     },
   },
