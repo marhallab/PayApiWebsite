@@ -348,7 +348,9 @@ export default {
             }
           );
 
-          alert("Success");
+          this.$alert("Your message has been sent successfully! We will get back to you in the upcoming days.").then(() => {
+              this.$router.push({ name: 'Home' })
+        });
           
         } catch (error) {
           console.log({ error });
