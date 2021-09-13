@@ -2,7 +2,7 @@
   <input
     :form="form"
     type="text"
-    :name="placeHolder"
+    :name="name"
     :class="state"
     v-on:click="inputClicked"
     :placeholder="placeHolder"
@@ -56,6 +56,9 @@ export default {
       type: String,
     },
     placeHolder: {
+      type: String,
+    },
+    name: {
       type: String,
     },
     form: {
