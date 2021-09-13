@@ -353,7 +353,7 @@ export default {
         });
           
         } catch (error) {
-          console.log({ error });
+              this.$alert("Your message has not been sent. Please try again.")
         }
       }
     },
